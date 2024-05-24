@@ -1,0 +1,158 @@
+/* Reset styles and font import */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bg--color: #081b29;
+  --second-bg-color: #112e42;
+  --text-color: #ededed;
+  --main-color: #00abf0;
+  --temp-bg-color:#1a2b367e;
+}
+
+/* Your styles for header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  transition: 0.3s;
+}
+
+.header.sticky {
+  background: var(--bg--color);
+}
+
+.logo {
+  position: relative;
+  font-size: 2.5rem;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.navbar {
+  position: relative;
+}
+
+.navbar a {
+  font-size: 1.7rem;
+  color: var(--text-color);
+  font-weight: 500;
+  margin-left: 3.5rem;
+}
+
+.navbar a:hover,
+.navbar .active {
+  color: var(--main-color);
+}
+
+#menu-icon {
+  position: relative;
+  font-size: 3.6rem;
+  color: var(--text-color);
+  cursor: pointer;
+  display: none;
+}
+
+h1 {
+  font-size: 75px;
+  font-weight: bold;
+  color: var(--main-color);
+  position: relative;
+  left: 30%; /* Move the element 50% to the right (center) of its container */
+  transform: translateX(-20%);
+  
+  margin-top: 10%; /* Add spacing below header */
+}
+
+h2 {
+  font-size: 25px ; /* Adjust the font size as needed */
+  
+  margin-top: 10px; /* Add spacing below h1 */
+  position: relative;
+  left: 30%; /* Move the element 50% to the right (center) of its container */
+  transform: translateX(-20%);
+  margin-bottom: 80px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px; /* Adjust the gap as needed */
+  padding: 2rem 9%;
+  background-color: var(--bg--color);
+  color: var(--text-color);
+  text-align: center;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+  background-color: var(--second-bg-color);
+  border: 1px solid var(--bg--color);
+  text-align: center;
+}
+
+.column-title {
+  font-size: 2.0rem;
+  font-weight: bold;
+}
+
+
+.row-list-title {
+  list-style: none;
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: bold;
+ 
+}
+
+.row-list-title li {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
+}
+.row-list {
+  list-style: none;
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+ 
+}
+
+.row-list li:nth-child(2){
+  font-weight: bold;
+  font-size: 13px;
+}
+.row-list li {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.row-list:hover{
+  background-color: var(--temp-bg-color);
+}
+

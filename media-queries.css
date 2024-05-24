@@ -1,0 +1,478 @@
+:root {
+  --bg--color: #081b29;
+  --secong-bg-color: #112e42;
+  --text-color: #ededed;
+  --main-color: #00abf0;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+  .about{
+    min-height: auto;
+  }
+}
+
+@media (max-width: 925px) {
+  .home-image {
+    display: none;
+  }
+  .home-content {
+    max-width: 100rem;
+  }
+}
+
+/* Galaxy Phone Screen */
+@media (max-width:414px) {
+  
+
+  .custom-share-icon{
+    margin-right: 15px;
+    }
+  
+  
+  
+  .img-card-container p{
+    margin-left: 5px;
+  }
+  }
+
+  
+
+/* Large Laptop Screen */
+@media (max-width: 1900px) {
+
+  .custom-card-image{
+  
+    width: 300px;
+    height: 180px;
+   
+    
+  }
+
+  .card-skills{
+    left: 50px;
+    margin-top:25px;
+  }
+
+  .img-card-container p{
+ 
+    right: 20px;
+    left: 50px;
+    
+  }
+  .custom-card {
+    height:670px;
+    
+  }
+
+  .img-card-container{
+    margin-left: 25%;       
+    height: 80%;
+  }
+
+  .custom-card-heading{
+  
+    margin-left: 10px;
+  }
+  
+
+}
+
+
+
+@media (max-width: 1025px) {
+  .header {
+    padding: 2rem 4%;
+  }
+
+  section {
+    padding: 10rem 4% 2rem;
+  }
+
+  .home {
+    padding: 0 4%;
+  }
+
+  .footer {
+    padding: 2rem 4%;
+  }
+  .contact{
+    min-height: auto;
+  }
+  .about{
+    min-height: auto;
+
+  }
+
+}
+
+/* Laptop Screen */
+@media (min-width: 1024px) and (max-width:1280px) {
+  .right-project-card {
+    width: 60%;
+  }
+  .custom-card-heading{
+    
+    left: 20px;
+   font-size:15px;
+
+    
+  }
+
+  .custom-card-image{
+  
+    width: 290px;
+    height: 180px ;
+  
+  }
+
+  .img-card-container{
+    margin-left:35%;
+    
+  }
+  .card-skills{
+    margin-top: 20%;
+    margin-right: 0%;
+    left:15px;
+    
+  }
+
+  
+
+  
+.custom-card {
+  height:715px;
+  
+}
+
+.img-card-container p{
+ 
+  right: 0px;
+  left: 5px;
+  
+}
+
+}
+
+/* For Tablet Screen */
+@media (max-width: 768px) {
+  .header {
+    background: var(--bg--color);
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    width: 100%;
+    padding: 1rem 4%;
+    z-index: 1;
+    background: transparent;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    transition: 0.25s ease;
+    transition-delay: 0.25s;
+  }
+
+  .navbar.active {
+    left: 0;
+    transition-delay: 0s;
+  }
+
+  .navbar .active-nav {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--bg--color);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    transition: 0.25s ease;
+    transition-delay: 0s;
+  }
+
+  .navbar.active .active-nav {
+    transition-delay: 0.25s;
+    left: 0;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+    transform: translateX(-20rem);
+    transition: 0.25s ease;
+    transition-delay: 0s;
+  }
+
+  .navbar.active a {
+    transform: translateX(0);
+    transition-delay: 0.25s;
+  }
+
+  .contact{
+    min-height: auto;
+  }
+  .container{
+    margin-top: 15px;
+   flex-direction: column;
+ }
+
+ .project-title h3 {
+  font-size: 2.13rem; /* Adjust font size for project titles */
+}
+
+.custom-card {
+  width:95%; /* Adjust card width for better visibility */
+  height:915px;
+}
+
+
+.custom-card-heading{
+ 
+ left: 4px;
+ font-size: 1.4rem;
+ 
+}
+
+.img-card-container p{
+ 
+  right: 0px;
+  left: 5px;
+  
+}
+
+.custom-folder-icon{
+ left:10px;
+}
+
+.card-skills{
+  margin-top: 57%;
+  margin-right: 20%;
+  
+}
+.custom-card-image{
+  
+  
+  width: 213px;
+  height: 150px ;
+}
+
+.img-card-container{
+  margin-left:50%;
+  
+}
+
+
+}
+
+@media (max-width:480px)
+{
+   
+    .footer{
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+
+    .footer p{
+        text-align: center;
+    }
+    
+    
+}
+
+/* Mobile Screen Styles */
+@media (max-width: 425px) {
+  .project-container {
+    flex-direction: column; /* Stack project cards vertically */
+  }
+
+  .project-card {
+    width: 100%; /* Expand the project cards to full width */
+    margin: 0;
+  }
+
+  .right-project-card {
+    order: -1; /* Display the right card content on top */
+  }
+
+  .centered-div {
+    margin: 10px 0; /* Add spacing for centered div */
+  }
+
+  .other-projects-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .custom-container {
+    margin: 10px 0;
+  }
+
+  .custom-card {
+    width: 90%; /* Adjust card width for better visibility */
+    height: 800px;
+  }
+  .project-title h3 {
+    font-size: 2.6rem; /* Adjust font size for project titles */
+  }
+  .container{
+    margin-top: 15px;
+   flex-direction: column;
+ }
+
+ .custom-folder-icon{
+  margin-left: 40px;
+}
+
+ .img-card-container p{
+  margin-bottom: 10%;
+  right: 20px;
+  left:40px;
+}
+
+.custom-card-heading{
+  
+  font-size: 2.0rem;
+  margin-left: 40px;
+}
+
+.img-card-container{
+  margin-left:20%;
+  
+}
+.card-skills{
+  
+  margin-top: 30px;
+  
+}
+
+
+.custom-card-image{
+  width: 350px;
+  height: 220px ;
+}
+}
+
+/* M-Mobile (375px) Styles  */
+@media (min-width: 375px) and (max-width:400px) {
+
+  .container{
+    margin-top: 15px;
+   flex-direction: column;
+ }
+
+ .project-title h3 {
+  font-size: 2.3rem; /* Adjust font size for project titles */
+}
+.content paragraph{
+  font-size: 2rem;
+}
+.project-summary p {
+  font-size:1.65rem;
+}
+
+.custom-folder-icon{
+  margin-left: 50px;
+}
+.custom-card-heading{
+  
+  font-size: 1.9rem;
+  margin-left: 45px;
+}
+.custom-card-image{
+  width: 300px;
+  height: 200px ;
+}
+
+.custom-share-icon{
+   right: 40px;
+}
+.img-card-container{
+  margin-left: 28%;       
+  height: 80%;
+}
+
+.img-card-container p{
+  margin-top: 10%;
+  right: 25px;
+  left:50px;
+}
+.card-skills{
+  margin-left:2%;
+  margin-top: 45px;
+  
+}
+.custom-card {
+  
+  height: 810px;
+}
+
+}
+
+/* S-Mobile (320px) Styles */
+@media (min-width: 320px) and (max-width:360px) {
+  .centered-div h3 {
+    font-size: 2.2rem; /* Adjust font size */
+  }
+
+  .custom-container {
+    margin: 20px 0; /* Add more spacing between custom containers */
+  }
+
+  .custom-card {
+    width: 80%; /* Adjust card width for better visibility */
+    height: 820px;
+  }
+  .project-title h3 {
+    font-size: 1.93rem; /* Adjust font size for project titles */
+  }
+  
+  .container{
+     margin-top: 15px;
+    flex-direction: column;
+  }
+  .content paragraph{
+    font-size: 2rem;
+  }
+  .project-summary p {
+    font-size:1.65rem;
+  }
+
+  .custom-folder-icon{
+    margin-left: 37px;
+  }
+  .custom-card-heading{
+    
+    font-size: 1.65rem;
+    margin-left: 45px;
+  }
+  .custom-card-image{
+    width: 250px;
+    height: 150px ;
+  }
+  .img-card-container{
+    margin-left:45%;
+    height: 80%;
+  }
+
+  .img-card-container p{
+    margin-top: 5%;
+  }
+  .card-skills{
+   
+    margin-top: 17%;
+    
+  }
+
+  .custom-share-icon{
+  right:5%;
+  }
+}
