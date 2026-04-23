@@ -92,7 +92,11 @@
   }
 
   .home {
-    padding: 0 4%;
+    padding: 12rem 4% 2rem;
+  }
+
+  .home-sci {
+    left: 4%;
   }
 
   .footer {
